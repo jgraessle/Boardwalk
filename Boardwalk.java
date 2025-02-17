@@ -34,7 +34,7 @@ public class Boardwalk <T>{
     public void diceRoll() {
         long seed = System.currentTimeMillis();
         Random random = new Random(seed);
-        int a = random.nextInt(6) + 1;
+        int a = random.nextInt(1, 7);
         int b = random.nextInt(1, 7);
         for (int i = 0; i < (a + b); i++) {
             step();
